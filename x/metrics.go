@@ -356,6 +356,11 @@ func NewBadgerCollector() prometheus.Collector {
 			"Size of the value log in bytes",
 			[]string{"dir"}, nil,
 		),
+		"badger_v2_tables_being_compacted_total": prometheus.NewDesc(
+			"badger_v2_tables_being_compacted_total",
+			"Total number of tables being compacted",
+			nil, nil,
+		),
 	})
 }
 
